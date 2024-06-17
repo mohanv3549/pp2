@@ -1,0 +1,120 @@
+body {
+    background-color: #c5cae9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #673ab7;
+    height: 125px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Align items and logo at opposite ends */
+    align-items: center; /* Vertically center items */
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    
+  }
+  
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu ul li {
+    list-style: none;
+    margin-right: 50px; 
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #4CAF50; 
+    font-weight: 600;
+  }
+  
+  .menu ul li a:hover {
+    /* text-shadow: 1px 1px 1px #4CAF50; */
+    color: white;
+  }
+  
+  
+  .logo {
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+    color: white;
+  }
+  
+  img {
+    height: 20%;
+    width: 20%;
+    margin-right: 100%;
+    border-radius: 50%;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    margin: 0; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+    /* min-height: 100vh;  */
+}
+
+
+.form {
+    margin-top: 5%;
+    margin-left:30%;
+    margin-bottom: 2%;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    width: 90%; 
+    max-width: 500px; 
+    /* border: 0.5px solid black; */
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 8px; 
+    margin-right: 2%;
+    margin-bottom: 16px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+}
+
+
+button[type="submit"] {
+    background-color:#4CAF50; ; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* A darker blue on hover */
+}
+.textbox{
+    float:right;
+    width:90%;
+    margin-top: 2%;
+    background-color: #673ab7;
+    margin-left:2%;
+    border-radius:10px;
+    text-align: left;
+    color: #4CAF50;
+    margin-right: 5%;
+    height: 200%;
+    }

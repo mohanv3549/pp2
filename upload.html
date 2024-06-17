@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="upload.css"> <!-- Link to external CSS file -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>   
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="log.jpeg" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="upload.html">insights</a></li>
+                <li><a href="index.html">Back to main page</a></li>
+                <!-- <li><a href="encydow.html">get files</a></li> -->
+            </ul>
+        </div>
+    </nav>
+    <div class="textbox">
+    <img src="instruction.gif" alt="">
+    <div class="main">
+     <div class="temp1">
+    <!-- <p style="margin-left:7%; color:#4CAF50; font-size:20px;">Select a CSV file to upload:</p> -->
+    <input type="file" id="upload" onchange="handleFileUpload(event)">
+    <input type="button" id="upload-btn" value="Upload CSV" onclick="document.getElementById('upload').click()"> <!-- Added ID -->
+</div> 
+    <div class="temp2">
+    <div>
+        <label for="x-column" style=" padding:5px;  margin-left: 7%;  margin-top:10px;">X-axis Column:</label>
+        <select id="x-column"></select>
+    </div>
+
+    <div>
+        <label for="y-column" style=" padding:5px;   margin-left:7%;  margin-top:10px;">Y-axis Column:</label>
+        <select id="y-column"></select>
+    </div>
+     </div>
+   
+    <!-- Radio buttons for plot type selection -->
+    <div class="temp3">
+        <input type="radio" id="line-plot" name="plot-type" value="line" onchange="generatePlot()"> <!-- Added ID -->
+        <label for="line-plot">Line Plot</label>
+        <input type="radio" id="histogram" name="plot-type" value="histogram" onchange="generatePlot()"> <!-- Added ID -->
+        <label for="histogram">Histogram</label>
+        <input type="radio" id="pie-chart" name="plot-type" value="pie" onchange="generatePlot()"> <!-- Added ID -->
+        <label for="pie-chart">Pie Chart</label>
+        <button style="margin-top: 20px;" id="download-btn" onclick="downloadVisualization()">Download Visualization</button> <!-- Added Download Button -->
+    </div>
+    
+   </div>
+
+    <div id="plot-container"  style="display: none;"></div> <!-- Hide plot container -->
+</div>
+  <script src="upload.js">
+
+</script>
+
+    
+</body>
+</html>

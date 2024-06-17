@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body id="h5">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="log.jpeg" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="adlogin.html">Analyst sign in</a></li>
+                <li><a href="adreg.html"> Analyst sign up</a></li>
+                <li><a href="index.html">Back to main page</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="textbox2">
+    <form action="adconnect.php" method="post" class="container">
+        <h1>Registration</h1>
+        <div>
+            <p style="color: #4CAF50;">Full Name:</p>
+            <input type="text" placeholder="Enter your full name" name="Name">
+        </div>
+        <div>
+            <p style="color: #4CAF50;">Email:</p>
+            <input type="text" placeholder="Enter your email address" name="email">
+        </div>
+        <div>
+            <p style="color: #4CAF50;">Password:</p>
+            <input type="password" placeholder="Choose a password" name="password">
+        </div>
+        <div style="color: #4CAF50;">
+            <p style="color: #4CAF50;">Mobile No:</p>
+            <input type="text" placeholder="Enter your mobile number" name="mobile">
+        </div>
+        <div style="color: #4CAF50;">
+            <input type="submit" value="Register">
+        </div>
+        <div class="login-link">
+            If you already have an account, <a href="login.html" target="_blank">login here</a>.
+        </div>
+    </form>
+</div>
+    </body>
+</html>

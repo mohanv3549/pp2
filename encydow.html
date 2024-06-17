@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homomorphic Encryption/Decryption</title>
+    <link rel="stylesheet" href="upload.css"> <!-- Link to external CSS file -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>   
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="log.jpeg" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="encydow.html">get files</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li><a href="index.html">Back to main page</a></li>
+                <!-- <li><a href="upload.html">insights</a></li> -->
+            </ul>
+        </div>
+    </nav>
+    <div class="textbox2">
+        <div>
+            <p>
+             <span style="font-weight: bold;">Read the instructions:-</span><br>
+               ->upload your csv file <br>
+               ->if you want download encrypted file select encrypt option <br>
+               ->after that, download button will be visible <br>
+               ->if you want to decrypt the  file select decrypt option <br>
+               ->after that, download button will be visible <br>
+               ->NOTE: encryption and decryption will be done according to our algorithm, outside files cannot be encrypted or decrypted here.
+            </p>
+        </div>
+    <!-- <p style="margin-left:7%; color:#BD8F4D; font-size:20px;">Select a CSV file to upload:</p> -->
+    <input   type="file" id="upload" onchange="handleFileUpload(event)">
+    <input   type="button" id="upload-btn" value="Upload CSV" onclick="document.getElementById('upload').click()"> <!-- Added ID -->
+
+    <!-- Checkbox for encryption -->
+    <div>
+        <input style="margin-left: 7%; padding: 2%; " type="checkbox" id="encryption-checkbox" onchange="updateData()">
+        <label for="encryption-checkbox">Encrypt</label>
+    </div>
+
+    <!-- Checkbox for decryption -->
+    <div>
+        <input style="margin-left: 7%; padding: 2%; margin-bottom:2%;" type="checkbox" id="decryption-checkbox" onchange="updateData()">
+        <label for="decryption-checkbox">Decrypt</label>
+    </div>
+     
+    <!-- Download button -->
+    <div>
+        <button  id="download-btn" onclick="downloadData()" style="display: none;">Download</button>
+    </div>
+    
+    <!-- Container for the plot -->
+    <div id="plot-container"></div>
+</div>
+    <script src="encydow.js">
+       
+    </script>
+</body>
+</html>
